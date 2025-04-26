@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".addsub">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/addsubback"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_arrow_circle_left_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Add Subject"
+                android:textColor="#4B6BFF"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toEndOf="@+id/addsubback"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.079" />
+
+            <TextView
+                android:id="@+id/imageselect"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="12dp"
+                android:drawableRight="@drawable/baseline_add_to_photos_24"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Select Tutor Image"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addsubimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageselect">
+
+                <ImageView
+                    android:id="@+id/addtutorimage"
+                    android:layout_width="175dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/addimager" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/addsubname"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="1dp"
+                android:fontFamily="@font/inter_medium"
+                android:hint="Enter a Subject Name"
+                android:inputType="text|textCapCharacters"
+                android:outlineSpotShadowColor="@color/black"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addsubimage" />
+
+            <EditText
+                android:id="@+id/addteacher"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="1dp"
+                android:fontFamily="@font/inter_medium"
+                android:hint="Enter a Teacher Name"
+                android:inputType="text|textCapSentences"
+                android:outlineSpotShadowColor="@color/black"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/addsubprice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addsubname"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/addsubprice"
+                android:layout_width="401dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="24dp"
+                android:elevation="1dp"
+                android:fontFamily="@font/inter_medium"
+                android:hint="Enter Amount For Monthly Base (Rs 500/M)"
+                android:inputType="text|textCapSentences"
+                android:outlineSpotShadowColor="@color/black"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addsubname"
+                app:layout_constraintVertical_bias="0.094" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="1dp"
+                android:fontFamily="@font/inter_medium"
+                android:hint="Enter Your Location"
+                android:inputType="text"
+                android:outlineSpotShadowColor="@color/black"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addsubprice" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="68dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_vertical"
+                android:text="Introduction"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addsubprice" />
+
+            <EditText
+
+                android:id="@+id/addintoduction"
+                android:layout_width="411dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter_medium"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="407dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_vertical"
+                android:text="Experience"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addintoduction" />
+
+            <EditText
+
+                android:id="@+id/addexpreince"
+                android:layout_width="405dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter_medium"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addinfo"
+                android:layout_width="157dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/cartshape"
+                android:backgroundTint="#4B6BFF"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addexpreince" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

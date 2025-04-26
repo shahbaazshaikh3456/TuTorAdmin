@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/aboutBackBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            android:src="@drawable/baseline_arrow_circle_left_24" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:text="About "
+            android:textColor="#4B6BFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- About Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Tutor Time Admin Panel!\n\nTutor Time is an innovative platform that connects students with qualified tutors for personalized learning experiences. Our mission is to make quality education accessible to everyone.\n\nAs an Admin, you have the authority to:\n\n1. Manage Tutor and Student Accounts – Approve, reject, and update profiles.\n\n2. Monitor Bookings and Sessions – View all tutoring sessions and resolve issues.\n\n3. Manage Payments – Oversee tutor payments and student transactions.\n\n4. Post Announcements – Share important updates, news, and policy changes.\n\n5. Support and Feedback – Handle user complaints and feedback.\n\nContact Us:\n\nEmail: admin@tutortime.com\nPhone: +1-987-654-3210\nWebsite: www.tutortime.com\n\nThank you for helping us maintain a safe and effective learning environment!"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#333333"
+            android:paddingBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

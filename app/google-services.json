@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341260007361",
+    "project_id": "tutortime-78245",
+    "storage_bucket": "tutortime-78245.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341260007361:android:52b1a12580a4f22204e140",
+        "android_client_info": {
+          "package_name": "com.example.tutoradmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEYJHt6UP85MV6l3_5xwm2md153Lp5pQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

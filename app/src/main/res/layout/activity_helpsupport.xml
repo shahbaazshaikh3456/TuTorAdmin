@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+
+        <!-- Contact Us -->
+        <ImageView
+            android:id="@+id/helpback"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/baseline_arrow_circle_left_24" />
+
+        <TextView
+            android:id="@+id/helpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:text="Help and Support"
+            android:textColor="#4B6BFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: support@tutortimeapp.com"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: +1-800-123-4567"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working Hours: Monday to Friday, 9:00 AM - 6:00 PM (IST)"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="16dp" />
+
+        <!-- FAQ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions (FAQs)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. How do I reset my password?\nGo to the Login page and click 'Forgot Password?'."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. How do I book a tutor?\nUse 'Find Tutors' to search and 'Book Now' to schedule."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Can I cancel a tutoring session?\nYes, via 'My Appointments' up to 24 hours before."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. How can I become a tutor?\nSign up as 'Tutor' and submit verification documents."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="16dp" />
+
+        <!-- Feedback -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback and Suggestions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We would love to hear from you!\nEmail: feedback@tutortimeapp.com"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="16dp" />
+
+        <!-- Social Media -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Media and Community"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website: www.tutortimeapp.com\nFacebook: facebook.com/tutortimeapp\nTwitter: twitter.com/tutortimeapp\nInstagram: instagram.com/tutortimeapp"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:paddingBottom="16dp" />
+
+        <!-- Final Note -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need more help? Contact us or use in-app chat support!"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
